@@ -1,7 +1,101 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "ManageRequests";
 }
 
-<h1>ManageRequests</h1>
+<div align="center">
+
+    <div style="width: 800px">
+        <h3 align="left">Manage Requests</h3>
+        <br />
+
+        <div style="background-color: white">
+            <table style="width: 800px; background-color: rgb(240, 240, 240)">
+                <tr style="background-color: rgb(220, 220, 220)">
+                    <th>Request ID</th>
+                    <th>Lecturer</th>
+                    <th>Date</th>
+                    <th>Approved</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+            <br />
+            <b>No request(s) found</b>
+            <br />
+            <br />
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <table style="width: 800px">
+        <tr>
+            <td style="width: 60%">
+                <div align="left">
+                    <table>
+                        <tr>
+                            <th>Request ID:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Lecturer:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Date Submitted:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Date Approved:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Approved:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Status:</th>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td style="width: 40%; vertical-align: top;">
+                <div>
+                    <b>Supporting Documents</b>
+                    <br />
+
+                    <div style="background-color: white">
+                        <table style="background-color: rgb(220, 220, 220); width: 100%">
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Size (MB)</th>
+                            </tr>
+                        </table>
+                        <br />
+                        <p align="center" style="margin: 0px"><b>Nothing found</b></p>
+                        <br />
+                    </div>
+
+                    <div align="right">
+                        <button class="button-class button-class-small2">Download</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+    </table>
+
+    <hr style="width: 800px" />
+
+    <div>
+        <br />
+        <b>Action: &nbsp;&nbsp;</b>
+        <button class="button-class button-class-small">Accept</button>
+        <button class="button-class button-class-small">Reject</button>
+    </div>
+
+</div>
 
