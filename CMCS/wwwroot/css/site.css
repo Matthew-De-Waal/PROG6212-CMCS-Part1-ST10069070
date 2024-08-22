@@ -32,11 +32,6 @@ body {
     color: white;
 }
 
-.menu-button {
-    width: 140px;
-    height: 33px;
-}
-
 .menu-display {
     background-color: white;
     height: auto;
@@ -46,9 +41,23 @@ body {
     color: white;
 }
 
-.btn-start-now {
+.button-class {
     width: 160px;
     height: 44px;
+    background-color: #ae1e1e;
+    color: white;
+    border-style: solid;
+    border-color: darkred;
+}
+
+.button-class-small {
+    width: 140px;
+    height: 36px;
+}
+
+.button-class-small2 {
+    width: 100px;
+    height: 30px;
 }
 
 .content-background {

@@ -1,7 +1,56 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "NewRequest";
 }
 
-<h1>NewRequest</h1>
+<div align="center">
 
+    <div style="width: 600px">
+        <table style="width: 600px" cellpadding="4">
+            <tr>
+                <th>Request/Claim for:</th>
+                <td><input type="text" value="" style="width: 300px" /></td>
+            </tr>
+            <tr>
+                <th>Hours Worked:</th>
+                <td><input type="text" value="" style="width: 200px" /></td>
+            </tr>
+            <tr>
+                <th>Hourly Rate:</th>
+                <td><input type="text" value="" style="width: 200px" /></td>
+            </tr>
+        </table>
+
+        <br />
+        <p align="left"><b>Supporting Documents (Size Limit: 10 MB)</b></p>
+
+        <div style="background-color: white">
+        <table style="width: 600px">
+            <tr style="background-color: rgb(220, 220, 220)">
+                <th>FileName</th>
+                <th>Type</th>
+                <th>Size (MB)</th>
+            </tr>
+        </table>
+        <br />
+        <b>No files uploaded.</b>
+        <br />
+        <br />
+        </div>
+
+        <div align="left">
+            <button class="button-class button-class-small2">Upload</button>
+            <button class="button-class button-class-small2">Delete</button>
+            <button class="button-class button-class-small2">Delete All</button>
+        </div>
+        <br />
+        <div align="left">
+            <b>Additional Notes (Description)</b>
+            <textarea style="width: 600px; height: 200px"></textarea>
+        </div>
+        <br />
+        <div align="right">
+            <button class="button-class button-class-small">Submit</button>
+            <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Cancel</button>
+        </div>
+    </div>
+</div>
