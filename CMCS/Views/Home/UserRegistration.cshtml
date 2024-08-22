@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "UserRegistration";
+}
+
+<div align="center" class="content-background">
+    <h2>CMCS Registration</h2>
+    <p>
+        Please complete the form below to create your user account.<br />
+        <b>Note: </b>PDF documents are supported only. Size Limit: 20 MB
+    </p>
+
+    <!-- Registration Form -->
+
+    <table style="width: 600px" cellpadding="4">
+
+        <tr>
+            <th>User Account Type:</th>
+            <td><input type="radio" id="rdLecturer" checked /> Lecturer &nbsp; <input type="radio" id="rdManager" /> Manager (Admin)</td>
+        </tr>
+
+        <tr>
+            <th>First Name:</th>
+            <td><input type="text" style="width: 100%" /></td>
+        </tr>
+
+        <tr>
+            <th>Last Name:</th>
+            <td><input type="text" style="width: 100%" /></td>
+        </tr>
+
+        <tr>
+            <th>Identity Number (ID):</th>
+            <td><input type="text" style="width: 100%" /></td>
+        </tr>
+
+        <tr>
+            <th>Email Address:</th>
+            <td><input type="text" style="width: 100%" /></td>
+        </tr>
+
+        <tr>
+            <th>Qualification Document(s):</th>
+            <td><button>Upload</button><span>No file(s) selected</span></td>
+        </tr>
+
+        <tr>
+            <th>Proof of Identity Document(s):</th>
+            <td><button>Upload</button><span>No file(s) selected</span></td>
+        </tr>
+
+        <tr>
+            <th>Password:</th>
+            <td><input type="password" value="" style="width: 100%" /></td>
+        </tr>
+
+        <tr>
+            <th>Confirm Password:</th>
+            <td><input type="password" value="" style="width: 100%" /></td>
+        </tr>
+    </table>
+
+    <br />
+    <button>Register</button>
+    <button onclick="window.location = '/Home/Index';">Cancel</button>
+</div>

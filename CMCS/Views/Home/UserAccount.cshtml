@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "UserAccount";
+}
+
+@{
+    string lecturerID = "<Empty>";
+    string fullName = "<Empty>";
+    string emailAddress = "<Empty>";
+
+    <div align="center">
+
+        <div>
+            <button class="menu-button">New Request</button>
+            <button class="menu-button">Track Request</button>
+            <button class="menu-button">Cancel Request</button>
+            <button class="menu-button">Export Log</button>
+        </div>
+        <br />
+
+
+        <div style="background-color: white">
+            <div class="menu-display">
+                <table style="width: 50%; height: 70px">
+                    <tr>
+                        <th><div align="center">Lecturer ID:</div></th>
+                        <th><div align="center">Full Name:</div></th>
+                        <th><div align="center">Email Address:</div></th>
+                    </tr>
+                    <tr>
+                        <td><div align="center">@lecturerID</div></td>
+                        <td><div align="center">@fullName</div></td>
+                        <td><div align="center">@emailAddress</div></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="background-color: #616a84">
+            <hr />
+                <table cellpadding="16" class="request-display">
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Request Name</th>
+                        <th>Description</th>
+                        <th>Request Approved</th>
+                        <th>Status</th>
+                        <th>Date Submitted</th>
+                        <th>Date Approved</th>
+                    </tr>
+
+
+                    <!-- This is where the claims will be displayed -->
+
+                </table>
+                <hr />
+            </div>
+
+
+            <b>No request(s) found</b>
+            <br />
+            <br />
+        </div>
+    </div>
+}

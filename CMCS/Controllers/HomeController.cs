@@ -18,6 +18,41 @@ namespace CMCS.Controllers
             return View();
         }
 
+        public IActionResult UserLogin()
+        {
+            return View();
+        }
+
+        public IActionResult UserRegistration()
+        {
+            return View();
+        }
+
+        public IActionResult Status()
+        {
+            return View();
+        }
+
+        public IActionResult UserAccount()
+        {
+            return View();
+        }
+
+        public IActionResult NewRequest()
+        {
+            return View();
+        }
+
+        public IActionResult TrackRequest()
+        {
+            return View();
+        }
+
+        public IActionResult ManageRequests()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

@@ -18,5 +18,39 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #6d7ba5;
+    background-image: url("/images/background1.png");
+    background-size: 100vw;
+    background-repeat: repeat;
+    color: black;
+}
+
+
+.footer, .bg-navbar {
+    background-color: #353c51;
+    color: white;
+}
+
+.menu-button {
+    width: 140px;
+    height: 33px;
+}
+
+.menu-display {
+    background-color: white;
+    height: auto;
+}
+
+.request-display {
+    color: white;
+}
+
+.btn-start-now {
+    width: 160px;
+    height: 44px;
+}
+
+.content-background {
+
 }

@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "UserLogin";
+}
+
+
+<div align="center" class="content-background">
+    <h1>CMCS Login</h1>
+    <p>
+        Welcome to the Contract Monthly Claim System (CMCS) Login Page.<br />
+        Provide your User ID and Password to authenticate and authorize your account.<br />
+        Don't have an account yet. <a href="/Home/UserRegistration">Create One Now</a>
+    </p>
+    <br />
+    <br />
+
+    <!-- User Credentials-->
+    <div align="center" style="display: inline-flex">
+        <img src="~/images/authenticate-icon.png" height="100" />
+        <div style="width: 20px"></div>
+        <div style="display: block">
+            <table style="width: 400px" cellpadding="4">
+                <tr>
+                    <td>
+                        <span>User ID:</span>
+                    </td>
+                    <td>
+                        <input id="txtUserID" value="" type="text" style="width: 100%" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Password: </span>
+                    </td>
+                    <td>
+                        <input id="txtPassword" value="" type="password" style="width: 100%" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <div align="right" style="width: 400px">
+                <input id="btnLogin" value="Login" type="button" style="width: 140px; height: 33px" onclick="window.location = '/Home/UserAccount'" />
+            </div>
+        </div>
+    </div>
+</div>
