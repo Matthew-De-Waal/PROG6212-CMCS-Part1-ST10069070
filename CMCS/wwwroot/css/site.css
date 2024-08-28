@@ -39,6 +39,7 @@ body {
 
 .request-display {
     color: white;
+    width: 100%;
 }
 
 .button-class {
@@ -62,4 +63,10 @@ body {
 
 .content-background {
 
+}
+
+.table-cell-class {
+    border-color: #6d9fa5;
+    border-width: 2px;
+    border-style: solid;
 }

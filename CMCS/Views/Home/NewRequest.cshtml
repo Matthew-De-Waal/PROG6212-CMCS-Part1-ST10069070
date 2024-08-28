@@ -1,11 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "NewRequest";
+    string? sAction = this.Context.Request.Query["Action"];
+
+    if(sAction == "NewRequest")
+        ViewData["Title"] = "New Request";
+
+    if (sAction == "EditRequest")
+        ViewData["Title"] = "Edit Request";
 }
 
 <div align="center">
 
     <div style="width: 600px">
-        <h3 align="left">New Request</h3>
+        <h3 align="left">@ViewData["Title"]</h3>
         <br />
 
         <table style="width: 600px" cellpadding="4">
@@ -52,8 +58,19 @@
         </div>
         <br />
         <div align="right">
-            <button class="button-class button-class-small">Submit</button>
-            <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Cancel</button>
+            @{
+                if(sAction == "NewRequest")
+                {
+                    <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Submit</button>
+                    <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Cancel</button>
+                }
+
+                if(sAction == "EditRequest")
+                {
+                    <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Apply</button>
+                    <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Cancel</button>
+                }
+            }
         </div>
     </div>
 </div>

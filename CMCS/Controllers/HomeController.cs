@@ -53,6 +53,16 @@ namespace CMCS.Controllers
             return View();
         }
 
+        public IActionResult CancelRequest()
+        {
+            return View();
+        }
+
+        public IActionResult CancelRequestSuccess()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
