@@ -63,6 +63,21 @@ namespace CMCS.Controllers
             return View();
         }
 
+        public IActionResult UpdateUserProfile()
+        {
+            return View();
+        }
+
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

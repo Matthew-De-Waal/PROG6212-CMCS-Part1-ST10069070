@@ -1,7 +1,7 @@
 ﻿@{
     string? sAction = this.Context.Request.Query["Action"];
 
-    if(sAction == "NewRequest")
+    if (sAction == "NewRequest")
         ViewData["Title"] = "New Request";
 
     if (sAction == "EditRequest")
@@ -9,8 +9,26 @@
 }
 
 <div align="center">
-
+    <br />
     <div style="width: 600px">
+        <div style="background-color: rgb(35, 35, 35); border-radius: 16px">
+            <br />
+            @{
+                if (sAction == "NewRequest")
+                {
+                    <img src="~/images/new-icon-large.png" height="180" />
+                }
+
+                if(sAction == "EditRequest")
+                {
+                    <img src="~/images/edit-icon-large.png" height="180" />
+                }
+            }
+            <br />
+            <br />
+        </div>
+        <div style="height: 2rem"></div>
+
         <h3 align="left">@ViewData["Title"]</h3>
         <br />
 
@@ -33,17 +51,17 @@
         <p align="left"><b>Supporting Documents (Size Limit: 10 MB)</b></p>
 
         <div style="background-color: white">
-        <table style="width: 600px">
-            <tr style="background-color: rgb(220, 220, 220)">
-                <th>FileName</th>
-                <th>Type</th>
-                <th>Size (MB)</th>
-            </tr>
-        </table>
-        <br />
-        <b>No files uploaded.</b>
-        <br />
-        <br />
+            <table style="width: 600px">
+                <tr style="background-color: rgb(220, 220, 220)">
+                    <th>FileName</th>
+                    <th>Type</th>
+                    <th>Size (MB)</th>
+                </tr>
+            </table>
+            <br />
+            <b>No files uploaded.</b>
+            <br />
+            <br />
         </div>
 
         <div align="left">
@@ -59,13 +77,13 @@
         <br />
         <div align="right">
             @{
-                if(sAction == "NewRequest")
+                if (sAction == "NewRequest")
                 {
                     <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Submit</button>
                     <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Cancel</button>
                 }
 
-                if(sAction == "EditRequest")
+                if (sAction == "EditRequest")
                 {
                     <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Apply</button>
                     <button class="button-class button-class-small" onclick="window.location = '/Home/UserAccount'">Cancel</button>

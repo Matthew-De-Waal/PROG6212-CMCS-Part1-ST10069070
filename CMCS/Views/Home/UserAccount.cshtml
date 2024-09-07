@@ -8,57 +8,67 @@
     string emailAddress = "<Empty>";
 
     <div align="center">
-
+    <div style="height: 1rem"></div>
         <div>
-            <button class="button-class" onclick="window.location = '/Home/NewRequest?Action=NewRequest'">New Request</button>
-            <button class="button-class" onclick="window.location = '/Home/NewRequest?Action=EditRequest'">Edit Request</button>
-            <button class="button-class" onclick="window.location = '/Home/TrackRequest'">Track Request</button>
-            <button class="button-class">Cancel Request(s)</button>
-            <button class="button-class">Export Log</button>
-            <button class="button-class">Update Profile</button>
-            <button class="button-class">Logout</button>
+            <button class="button-class" onclick="window.location = '/Home/NewRequest?Action=NewRequest'"><img src="~/images/new-icon.png" height="24"/>New Request</button>
+            <button class="button-class" onclick="window.location = '/Home/NewRequest?Action=EditRequest'"><img src="~/images/edit-icon.png" height="24" />Edit Request</button>
+            <button class="button-class" onclick="window.location = '/Home/TrackRequest'"><img src="~/images/track-icon.png" height="24" />Track Request</button>
+            <button class="button-class" onclick="window.location = '/Home/CancelRequest'"><img src="~/images/cancel-icon.png" height="24" />Cancel Request(s)</button>
+            <button class="button-class"><img src="~/images/export-icon.png" height="24" />Export Log</button>
+            <button class="button-class" onclick="window.location = '/Home/UpdateUserProfile'"><img src="~/images/account-icon.png" height="24" />Manage Account</button>
+            <button class="button-class" onclick="window.location = '/Home/UserLogin'"><img src="~/images/logout-icon.png" height="24" />Logout</button>
         </div>
         <br />
 
-
         <div style="background-color: white">
-            <div class="menu-display">
-                <table style="width: 50%; height: 70px">
-                    <tr>
-                        <th><div align="center">Lecturer ID:</div></th>
-                        <th><div align="center">Full Name:</div></th>
-                        <th><div align="center">Email Address:</div></th>
-                    </tr>
-                    <tr>
-                        <td><div align="center">@lecturerID</div></td>
-                        <td><div align="center">@fullName</div></td>
-                        <td><div align="center">@emailAddress</div></td>
-                    </tr>
-                </table>
-            </div>
+            <table style="width: 100%; height: 100vh">
+                <tr>
+                    <td align="center" style="width: 65%; vertical-align: top">
+                        <div style="background-color: white">
+                            <div style="background-color: #304c80">
+                                <br />
+                                <table cellpadding="16" class="request-display" style="width: 100%">
+                                    <tr>
+                                        <th class="table-cell-class" style="width: 10%">Request ID</th>
+                                        <th class="table-cell-class" style="width: 20%">Request Name</th>
+                                        <th class="table-cell-class" style="width: 30%">Description</th>
+                                        <th class="table-cell-class" style="width: 10%">Request Approved</th>
+                                        <th class="table-cell-class" style="width: 10%">Status</th>
+                                        <th class="table-cell-class" style="width: 10%">Date Submitted</th>
+                                        <th class="table-cell-class" style="width: 10%">Date Approved</th>
+                                    </tr>
 
-            <div style="background-color: #304c80">
-            <br />
-                <table cellpadding="16" class="request-display">
-                    <tr>
-                        <th class="table-cell-class" style="width: 10%">Request ID</th>
-                        <th class="table-cell-class" style="width: 20%">Request Name</th>
-                        <th class="table-cell-class" style="width: 30%">Description</th>
-                        <th class="table-cell-class" style="width: 10%">Request Approved</th>
-                        <th class="table-cell-class" style="width: 10%">Status</th>
-                        <th class="table-cell-class" style="width: 10%">Date Submitted</th>
-                        <th class="table-cell-class" style="width: 10%">Date Approved</th>
-                    </tr>
+                                    <!-- This is where the claims will be displayed -->
+                                </table>
+                                <br />
+                            </div>
+                            <br />
 
-                    <!-- This is where the claims will be displayed -->
-                </table>
-                <br />
-            </div>
-            <br />
+                            <b>No request(s) found</b>
+                            <br />
+                            <br />
+                    </td>
+                    <td style="width: 1%; height: 100%; background-color: #304c80"></td>
+                    <td align="center" style="vertical-align: top; width: 34%">
+                        <div style="background-color: white">
+                            <div align="left"><b>Supporting Document(s)</b></div>
+                            <table cellpadding="16" class="request-display" style="width: 100%">
+                                <tr style="background-color: #304c80">
+                                    <th class="table-cell-class">Document Name</th>
+                                    <th class="table-cell-class">Size</th>
+                                    <th class="table-cell-class">Type</th>
+                                    <th class="table-cell-class">Action</th>
+                                </tr>
+                            </table>
+                            <br />
 
-            <b>No request(s) found</b>
-            <br />
-            <br />
+                            <b>No document(s) found</b>
+                            <br />
+                            <br />
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 }

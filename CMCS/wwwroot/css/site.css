@@ -43,7 +43,7 @@ body {
 }
 
 .button-class {
-    width: 160px;
+    width: 165px;
     height: 44px;
     background-color: #ae1e1e;
     color: white;
@@ -65,8 +65,24 @@ body {
 
 }
 
+.text-style1 {
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+
 .table-cell-class {
     border-color: #6d9fa5;
     border-width: 2px;
     border-style: solid;
+}
+
+.border-class1 {
+    border-color: rgb(255, 45, 0);
+    border-width: 6px;
+    border-style: solid;
+}
+
+.background-style1 {
+    background-color: rgba(255, 100, 0, 0.2);
 }
